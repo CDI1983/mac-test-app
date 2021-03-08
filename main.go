@@ -35,6 +35,7 @@ func main()  {
 			l:=<-done
 			if i == l{
 				fmt.Println("goroutine -> ", l)
+				fmt.Println("test分支")
 				fmt.Println("data = ", maptest[l])
 				ch <- l
 				wg.Done()
